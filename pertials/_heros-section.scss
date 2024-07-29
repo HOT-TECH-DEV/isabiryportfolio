@@ -1,0 +1,168 @@
+ .heros-section{
+    margin-top: 2.5rem;
+        padding: 1rem 2rem;
+        margin-left: 22rem;
+        margin-right: 47px;
+        .top-Btns{
+            display: flex;
+            gap: 43.3rem;
+            .right{
+                height: 55px;
+                width: 55px;
+                color: $white;
+                border: 1px solid gray;
+                background: none;
+                font-size: 12px;
+                border-radius: 27.5px;
+            }
+            .left{
+                height: 30px;
+                width: 8rem;
+                color: $white;
+                border: 1px solid gray;
+                background: none;
+                font-size: 12px;
+                border-radius: 25px;
+                display: flex;
+                gap: .5rem;
+                align-items: center;   
+            }
+            .left i{
+                margin-left: 1rem;
+            }
+        }
+        
+            
+            .main-hello{
+                font-size: 78px;
+                // line-height: 90px;
+                font-weight:100px;  
+                color: $white          
+        }.my-name{
+            color: $buttons-color;
+        }
+        .my-role{
+            font-size: 16px;
+            font-weight: 400px;
+            color: $white;
+            margin: 1.5rem 0;
+        }          
+    }
+    
+
+.rolling-button-projcts{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    text-align: right;
+    float: right;
+    padding: 1rem;
+    // background: none;
+    border: 1px solid $paragraphs;
+    animation: rotate 2s infinite;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.expriences{  
+    display: flex;
+    gap: 5rem;
+    margin-top: 10rem;
+    // margin-left: -40px;
+    .years{
+        color: $buttons-color;
+        font-size: 70px;
+        font-weight: 500px;
+        
+        
+    }.description{
+        color: $paragraphs;
+        font-size: 15px;
+    } 
+
+
+}
+ 
+@media(max-width:768px){
+    .heros-section{
+        margin-top: 5rem;
+            padding: 1rem 0.8rem;
+            margin-left: 0rem;
+            margin-right: 0;
+            width: auto;
+            .top-Btns{
+                display: flex;
+                gap: 0;
+                .right{
+                    height: 55px;
+                    width: 55px;
+                    color: $white;
+                    border: 1px solid gray;
+                    background: none;
+                    font-size: 12px;
+                    border-radius: 27.5px;
+                }
+                .left{
+                    height: 30px;
+                    width: 8rem;
+                    color: $white;
+                    border: 1px solid gray;
+                    background: none;
+                    font-size: 12px;
+                    border-radius: 25px;
+                    display: flex;
+                    gap: .5rem;
+                    align-items: center;   
+                }
+                .left i{
+                    margin-left: 1rem;
+                }
+            }
+            
+                
+                .main-hello{
+                    font-size: 45px;
+                    // line-height: 0;
+                    font-weight:100px;  
+                    color: $white          
+            }.my-name{
+                color: $buttons-color;
+            }
+            .my-role{
+                font-size: 16px;
+                font-weight: 400px;
+                color: $white;
+                margin: 0;
+            }          
+        } 
+        
+        
+        .rolling-button-projcts{
+            // margin-top: 5rem;
+            height: 10rem;
+            width: 10rem;
+            border-radius: 50%;
+            text-align: left;
+            float: left;
+            padding: 1rem;
+            // background: none;
+            border: 1px solid $paragraphs;
+            animation: rotate 2s infinite;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+}
+
+

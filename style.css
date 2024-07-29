@@ -1,0 +1,780 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1f1f1f;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.main-message {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  width: 95%;
+  gap: 2rem;
+}
+
+.navigation-page {
+  padding: 1rem;
+  margin: auto;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.navigation-page .main-card {
+  border: 1px solid #565656;
+  border-radius: 2.2rem;
+  width: 25%;
+  position: fixed;
+  height: 40.7rem;
+}
+.navigation-page .card {
+  padding: 1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.navigation-page img {
+  margin-top: 1rem;
+  border-radius: 2rem;
+}
+.navigation-page .card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.navigation-page .static-icons-container {
+  margin-left: 76rem;
+  padding: 1.1rem;
+  height: 22rem;
+  position: fixed;
+  margin-top: 9.4rem;
+  border: 1px solid gray;
+  background: none;
+  border-radius: 45px;
+}
+.navigation-page .all-static-icons {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.navigation-page .name-and-details {
+  color: white;
+  display: flex;
+  gap: 4rem;
+  text-align: right;
+  padding: 1rem 1rem;
+}
+.navigation-page .logo {
+  font-size: 25px;
+  font-weight: 500;
+}
+.navigation-page .description-paragraph {
+  font-size: 16px;
+  color: rgb(236, 224, 224);
+}
+.navigation-page .email p {
+  font-weight: 300;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+.navigation-page .copyright {
+  color: rgba(255, 255, 255, 0.349);
+}
+.navigation-page .social-links i {
+  font-size: 35px;
+  border: 2px solid grey;
+  color: gray;
+  border-radius: 18px;
+  margin: 5px;
+  flex-shrink: none;
+}
+.navigation-page .hire-me {
+  padding: 0.8rem 6rem;
+  background: none;
+  margin: auto;
+  border-radius: 26px;
+  border: none;
+  background: #28e98c;
+  font-size: 16px;
+  align-items: center;
+}
+.navigation-page .hire-me i {
+  color: white;
+  align-items: center;
+  margin-right: 8px;
+  font-size: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .navigation-page {
+    padding: 1rem;
+    width: 50rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .navigation-page .main-card {
+    border: 1px solid #565656;
+    height: auto;
+    padding: 1rem;
+    width: 100%;
+    position: inherit;
+  }
+  .navigation-page .card {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .navigation-page .all-static-icons {
+    display: none;
+  }
+  .navigation-page .name-and-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navigation-page .description-paragraph {
+    display: flex;
+    flex-direction: column;
+  }
+  .navigation-page .email p {
+    text-align: center;
+  }
+  .navigation-page .copyright {
+    text-align: center;
+  }
+  .navigation-page .social-links {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .navigation-page .hire-me {
+    margin: 0;
+  }
+}
+@media (max-width: 395px) {
+  .navigation-page {
+    padding: 1rem;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .navigation-page .description-paragraph {
+    font-size: 12.4px;
+  }
+  .navigation-page .hire-me {
+    padding: 0.5rem 1rem;
+  }
+}
+.heros-section {
+  margin-top: 2.5rem;
+  padding: 1rem 2rem;
+  margin-left: 22rem;
+  margin-right: 47px;
+}
+.heros-section .top-Btns {
+  display: flex;
+  gap: 43.3rem;
+}
+.heros-section .top-Btns .right {
+  height: 55px;
+  width: 55px;
+  color: white;
+  border: 1px solid gray;
+  background: none;
+  font-size: 12px;
+  border-radius: 27.5px;
+}
+.heros-section .top-Btns .left {
+  height: 30px;
+  width: 8rem;
+  color: white;
+  border: 1px solid gray;
+  background: none;
+  font-size: 12px;
+  border-radius: 25px;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.heros-section .top-Btns .left i {
+  margin-left: 1rem;
+}
+.heros-section .main-hello {
+  font-size: 78px;
+  font-weight: 100px;
+  color: white;
+}
+.heros-section .my-name {
+  color: #28e98c;
+}
+.heros-section .my-role {
+  font-size: 16px;
+  font-weight: 400px;
+  color: white;
+  margin: 1.5rem 0;
+}
+
+.rolling-button-projcts {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  text-align: right;
+  float: right;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.466);
+  animation: rotate 2s infinite;
+}
+.rolling-button-projcts img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.expriences {
+  display: flex;
+  gap: 5rem;
+  margin-top: 10rem;
+}
+.expriences .years {
+  color: #28e98c;
+  font-size: 70px;
+  font-weight: 500px;
+}
+.expriences .description {
+  color: rgba(255, 255, 255, 0.466);
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .heros-section {
+    margin-top: 5rem;
+    padding: 1rem 0.8rem;
+    margin-left: 0rem;
+    margin-right: 0;
+    width: auto;
+  }
+  .heros-section .top-Btns {
+    display: flex;
+    gap: 0;
+  }
+  .heros-section .top-Btns .right {
+    height: 55px;
+    width: 55px;
+    color: white;
+    border: 1px solid gray;
+    background: none;
+    font-size: 12px;
+    border-radius: 27.5px;
+  }
+  .heros-section .top-Btns .left {
+    height: 30px;
+    width: 8rem;
+    color: white;
+    border: 1px solid gray;
+    background: none;
+    font-size: 12px;
+    border-radius: 25px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .heros-section .top-Btns .left i {
+    margin-left: 1rem;
+  }
+  .heros-section .main-hello {
+    font-size: 45px;
+    font-weight: 100px;
+    color: white;
+  }
+  .heros-section .my-name {
+    color: #28e98c;
+  }
+  .heros-section .my-role {
+    font-size: 16px;
+    font-weight: 400px;
+    color: white;
+    margin: 0;
+  }
+  .rolling-button-projcts {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    text-align: left;
+    float: left;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.466);
+    animation: rotate 2s infinite;
+  }
+  .rolling-button-projcts img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.body-sections {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+  gap: 3rem;
+}
+.body-sections .about-btn {
+  height: 35px;
+  width: 100px;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.466);
+  border-radius: 27px;
+  text-transform: uppercase;
+  color: white;
+}
+.body-sections .the-headings {
+  font-size: 60px;
+  line-height: 60px;
+  color: white;
+}
+.body-sections .the-headings .colored-text {
+  color: #28e98c;
+}
+.body-sections .descriptions {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.466);
+  line-height: 30px;
+}
+
+.exprience-and-education-table {
+  border-left: 1px solid rgba(255, 255, 255, 0.466);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 5rem;
+}
+.exprience-and-education-table .year-of-exprience {
+  color: rgba(255, 255, 255, 0.466);
+  font-size: 16px;
+}
+.exprience-and-education-table .semi-headngs {
+  font-size: 24px;
+  line-height: 28.8px;
+  color: white;
+}
+.exprience-and-education-table .organisation {
+  color: rgba(255, 255, 255, 0.466);
+  font-size: 14px;
+  line-height: 30px;
+}
+.exprience-and-education-table .space {
+  margin: 16px 0;
+}
+
+.my-specalizations .website-design-boxes {
+  display: flex;
+  gap: 2rem;
+}
+.my-specalizations .website-design-boxes .website-design-box {
+  width: 100%;
+  border: 0.1px solid rgba(255, 255, 255, 0.466);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+}
+.my-specalizations .website-design-boxes .website-design-box:hover {
+  border: 0.1px solid #28e98c;
+  transition: 0.1s ease-out;
+  justify-content: space-between;
+}
+.my-specalizations .website-design-boxes .website-design-box .website_design {
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.my-specalizations .website-design-boxes .website-design-box .what-i-built {
+  margin-top: 8px;
+}
+.my-specalizations .website-design-boxes .website-design-box .number-of-products {
+  font-size: 12px;
+  margin-top: 2rem;
+  color: white;
+}
+.my-specalizations .website-design-boxes .website-design-box .number-of-products:hover {
+  text-decoration: underline;
+}
+.my-specalizations .website-design-boxes .semi-headngs {
+  font-size: 18px;
+  line-height: 28.8px;
+  color: white;
+}
+
+.ranking-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.advantage-ranking-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.advantage-ranking-section .rankng-box {
+  width: 10rem;
+  height: 15rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.466);
+  border-radius: 8rem;
+  margin-top: 2rem;
+}
+.advantage-ranking-section .rankng-box img {
+  width: 55px;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3.2rem;
+  margin-top: 3.2rem;
+}
+.advantage-ranking-section .percentage {
+  margin-top: 1rem;
+  color: #28e98c;
+  font-size: 25px;
+  margin-left: 3.2rem;
+}
+.advantage-ranking-section .FIGMA {
+  text-align: center;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.466);
+}
+
+.projects-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.projects-section .semi-headngs-projects {
+  font-size: 24px;
+  line-height: 28.8px;
+  color: white;
+}
+.projects-section .semi-headngs-projects a {
+  text-decoration: none;
+  color: white;
+}
+.projects-section:hover {
+  text-decoration: underline;
+  color: white;
+}
+.projects-section .project-btns {
+  position: absolute;
+  bottom: 5rem;
+  left: 1.7rem;
+  display: flex;
+  gap: 0.7rem;
+}
+.projects-section .project-btns button {
+  padding: 0.6rem 1.3rem;
+  border-radius: 2rem;
+  border: none;
+}
+.projects-section .project-btns button:hover {
+  background-color: black;
+  color: white;
+  transition: all ease 0.2s;
+}
+
+.projects-section-flex {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.projects-section-flex img {
+  height: 380px;
+  width: 385px;
+}
+.projects-section-flex .project-02-btns {
+  display: flex;
+  gap: 0.6rem;
+  position: absolute;
+  left: 2rem;
+  bottom: 1rem;
+}
+.projects-section-flex .project-02-btns button {
+  padding: 0.6rem 1.5rem;
+  border-radius: 2rem;
+  border: none;
+}
+.projects-section-flex .project-02-btns button:hover {
+  background-color: black;
+  color: white;
+  transition: all ease 0.2s;
+}
+
+.semi-headings-below-projects-02-03 {
+  font-size: 24px;
+  line-height: 28.8px;
+  text-decoration: none;
+  display: flex;
+  gap: 8rem;
+}
+
+.semi-headings-below-projects-02-03 a {
+  color: white;
+  text-decoration: none;
+}
+.semi-headings-below-projects-02-03 a:hover {
+  text-decoration: underline;
+  transition: 1s ease-in-out;
+}
+
+.projects-portfolio-02-03 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testmonial-card {
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.466);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 1rem;
+}
+.testmonial-card .personal-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.testmonial-card .personal-details .name {
+  align-items: center;
+  margin-top: 1.5rem;
+  font: 10px;
+  color: white;
+}
+.testmonial-card .personal-details .testmonial-organization {
+  color: #28e98c;
+  font-size: 12px;
+}
+.testmonial-card .personal-details .ocupation {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.466);
+  line-height: 30px;
+}
+.testmonial-card .personal-comment {
+  font-size: 24px;
+  line-height: 28.8px;
+  color: white;
+}
+.testmonial-card .the-project {
+  color: white;
+  font-size: 12px;
+}
+.testmonial-card .personal-details img {
+  height: 50px;
+  width: 50px;
+  align-items: center;
+}
+
+.clients-section {
+  padding: 2rem 0rem;
+  align-items: center;
+}
+
+.clients-section-title {
+  color: white;
+  font-size: 14px;
+  margin: 2rem 0;
+  margin-left: 0px;
+}
+
+.My-clients-first-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.My-clients-second-line {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+
+.My-clients-second-line img {
+  width: 90px;
+}
+
+.My-clients-first-line img {
+  width: 90px;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.pricing-cards .pricing-card-1 {
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.466);
+  width: 45%;
+  height: 40rem;
+  border-radius: 28px;
+}
+.pricing-cards .pricing-card-1 .top-card-text {
+  display: flex;
+  justify-content: space-between;
+}
+.pricing-cards .pricing-card-1 .top-card-text .BASIC {
+  color: white;
+  font-size: 18px;
+}
+.pricing-cards .pricing-card-1 .top-card-text p {
+  color: rgba(255, 255, 255, 0.466);
+  text-align: right;
+}
+.pricing-cards .hours-pricing {
+  display: flex;
+  padding: 2rem 0;
+  gap: 0.4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.466);
+}
+.pricing-cards .hours-pricing .hours {
+  color: #28e98c;
+  font-size: 35px;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+.pricing-cards .hours-pricing p {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.466);
+  align-items: center;
+}
+
+.pricing-description {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-1-btn {
+  padding: 0.8rem 1.5rem;
+  margin: auto;
+  border-radius: 26px;
+  border: none;
+  background: #28e98c;
+  font-size: 16px;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.warning {
+  padding: 2rem 0;
+  justify-content: center;
+}
+.warning .warning-message {
+  color: white;
+}
+.warning .warning-message .contact-us-warning {
+  color: #28e98c;
+  text-decoration: underline;
+}
+
+form {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 40%;
+}
+form .dd {
+  display: flex;
+  flex-direction: column;
+}
+form .dd p {
+  color: white;
+}
+form .dd textarea {
+  background: none;
+}
+form .dd input {
+  border: none;
+  background: none;
+}
+form .send-message-btn {
+  padding: 0.8rem 5rem;
+  background: none;
+  margin: auto;
+  border-radius: 26px;
+  border: none;
+  background: #28e98c;
+  font-size: 16px;
+  align-items: center;
+}
+
+.contact-us {
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+  .my-specalizations {
+    border-bottom-color: #de1a1a;
+  }
+  .my-specalizations .website-design-boxes {
+    display: flex;
+    gap: 0.8rem;
+  }
+  .my-specalizations .website-design-boxes .website-design-box {
+    border: 0.1px solid rgba(255, 255, 255, 0.466);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.7rem;
+  }
+  .my-specalizations .website-design-boxes .website-design-box:hover {
+    border: 0.1px solid #28e98c;
+    transition: 0.1s ease-out;
+  }
+  .my-specalizations .website-design-boxes .website-design-box .website_design {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+  .my-specalizations .website-design-boxes .website-design-box .what-i-built {
+    margin-top: 8px;
+  }
+  .my-specalizations .website-design-boxes .website-design-box .number-of-products {
+    font-size: 12px;
+    margin-top: 2rem;
+    color: white;
+  }
+  .my-specalizations .website-design-boxes .website-design-box .number-of-products:hover {
+    text-decoration: underline;
+  }
+  .my-specalizations .website-design-boxes .semi-headngs {
+    font-size: 18px;
+    line-height: 28.8px;
+    color: white;
+  }
+}/*# sourceMappingURL=style.css.map */

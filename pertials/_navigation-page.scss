@@ -1,0 +1,279 @@
+.navigation-page{
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    .main-card{
+        border: 1px solid #565656;
+        border-radius: 2.2rem;   
+        width: 25%;
+        position: fixed;
+        height: 40.7rem;
+    }
+    .card{
+        padding: 1rem;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        // text-align: center;
+    }
+    
+    img{
+        margin-top: 1rem;
+        border-radius: 2rem;
+    }
+    .card-details{
+        display: flex;
+        flex-direction: column;
+        gap: 1.8rem;
+    }
+   
+ 
+    .static-icons-container{
+        margin-left: 76rem;
+        // width: 4rem;
+        padding: 1.1rem;
+        height: 22rem;
+        position: fixed;
+        margin-top: 9.4rem;
+        border: 1px solid gray;
+        background: none;
+        border-radius: 45px;
+
+    }
+    .all-static-icons{
+        // color: $white;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .name-and-details{
+        color: white;
+        display: flex;
+        gap: 4rem; 
+        text-align: right;  
+        // width: 90%;
+        padding: 1rem 1rem;
+    }
+    .logo{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .description-paragraph{
+        font-size: 16px;
+        color: rgb(236, 224, 224);
+    }
+    .email p{
+        font-weight: 300;
+        font-size: 24px;
+        color: rgb(255, 255, 255);
+    }
+    .copyright{
+        color:  rgba(255, 255, 255, 0.349);;
+    }
+    .social-links i{
+        font-size: 35px;
+        border: 2px solid grey;
+        color: gray;
+        border-radius: 18px;
+        // display: flex;
+        // flex-direction: column;
+        margin: 5px;
+        flex-shrink: none;
+    }
+    .hire-me{
+        padding: .8rem 6rem;
+        background: none;
+        margin: auto;
+        border-radius: 26px;
+        border: none;
+        background: #28e98c;
+        font-size: 16px;
+        align-items: center;
+    }
+    .hire-me i{
+        color: $white;
+        align-items: center;
+        margin-right: 8px;
+        font-size: 20px;
+        justify-content: center;
+    }
+   
+}
+
+// responsive
+
+// @media(max-width: 768px){
+//     .main-contaner{
+//         // width: 40%;
+//     }
+    
+//      .navigation-page{
+//         }
+
+//         .HOME-PAGE{
+//         display: flex;
+//         flex-direction: column;
+//         .main-card{
+//             display: flex;
+//             flex-direction: column;
+//            position: inherit;
+//            width: 100%;
+//            height: 50rem;
+//            .name-and-details{
+//             display: flex;
+//             justify-content: space-between;
+//             padding: 2rem;
+//            }
+//            .card{
+//             padding: 0rem;
+//             display: flex;
+//             gap: 2rem;
+//             background-color: #28e98c;
+//             width: 100%;
+            
+
+//             img{
+//                 height: 300px;
+//                 width: 300px;
+        
+//             }
+//             .card-details{
+//                 padding: 3rem 17rem;
+//                 gap: 2rem;
+//             }
+//             .email p{
+//                 font-size: 30px;
+//                 text-align: center;
+
+//             }
+//             .copyright p{
+//                 font-size: 20px;
+//             }
+
+//            }
+//            .hire-me{
+//             width: 100%;
+//             button{
+                
+//                 width: 60rem;
+//                }
+//            }
+           
+//         }
+//         .heros-section{
+//             margin-top: 25rem;
+//             margin-left: 0rem;
+//         }
+//         }
+   
+// }
+
+// @media(max-width: 768px){
+//     .static-icons-container{
+//         display: none;
+//     }
+// }
+
+// @media(max-width: 768px){
+//     .static-icons-container{
+//         display: none;
+//     }
+// }
+
+@media(max-width:768px){
+    .navigation-page{
+        padding: 1rem;
+   
+        width: 50rem;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        
+        .main-card{
+            border: 1px solid #565656;
+             height: auto;
+            padding: 1rem;
+            width: 100%;
+            position: inherit;
+            
+        }
+        .card{
+            padding: 1rem;
+            // align-items: center;
+            width: 100%;
+            display: flex;
+            
+            flex-direction: column;
+            gap: 1rem;
+            // text-align: center;
+        }
+  
+      .all-static-icons{
+        display: none;
+      } 
+     
+      
+        .name-and-details{
+             display: flex;
+            justify-content: space-between;
+            align-items: center;
+            }
+      
+        .description-paragraph{
+             display: flex;
+            flex-direction: column;
+        }
+        .email p{
+            text-align: center;
+            }
+        .copyright{
+            text-align: center;
+            }
+
+        .social-links{
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            justify-content: center;
+
+        }
+      
+        .hire-me{
+            margin: 0;
+            }
+    
+       
+    }   
+} 
+
+@media(max-width:395px){
+    .navigation-page{
+        padding: 1rem;
+    
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+   
+
+     
+      
+      
+      
+        .description-paragraph{
+            font-size: 12.4px;
+        }
+       
+        .hire-me{
+            padding: 0.5rem 1rem;
+            }
+    
+       
+    }   
+}

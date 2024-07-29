@@ -1,0 +1,513 @@
+// about section
+.body-sections{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    gap: 3rem;
+    .about-btn{
+        height: 35px;
+        width: 100px;
+        background: none;
+        border: 1px solid $paragraphs;
+        border-radius: 27px;
+        text-transform: uppercase;
+        color: $white;
+    }
+    .the-headings{
+        font-size: 60px;
+        line-height: 60px;
+        color: $white;
+        .colored-text{
+            color: $buttons-color;
+        }
+    
+    }
+    .descriptions{
+        font-size: $description-size;
+        color: $paragraphs;
+        line-height: $description-line-height;
+    }
+}
+
+// @media (max-width: 768px){
+//     .body-sections{
+//         display: flex;
+//         flex-direction: column;
+//         margin-top: 10rem;
+//         gap: 3rem;
+//         .about-btn{
+//             height: 35px;
+//             width: 100px;
+//             background: none;
+//             border: 1px solid $paragraphs;
+//             border-radius: 27px;
+//             text-transform: uppercase;
+//             color: $white;
+//         }
+//         .the-headings{
+//             font-size: 60px;
+//             line-height: 60px;
+//             color: $white;
+//             .colored-text{
+//                 color: $buttons-color;
+//             }
+        
+//         }
+//         .descriptions{
+//             font-size: $description-size;
+//             color: $paragraphs;
+//             line-height: $description-line-height;
+//         }
+//     }
+// }
+
+// exprience-and-education-table
+.exprience-and-education-table{
+    border-left: 1px solid $paragraphs;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 5rem;
+    .year-of-exprience{
+        color: $paragraphs;
+        font-size: $description-size;
+    }
+    .semi-headngs{
+        font-size: 24px;
+        line-height: 28.8px;
+        color: $white;
+    }
+    .organisation{
+        color: $paragraphs;
+        font-size: 14px;
+        line-height: $description-line-height;
+    }
+    .space{
+        margin: 16px 0;
+    }
+}
+// exprience-and-education-table end
+
+// my specalisations
+.my-specalizations{
+    .website-design-boxes{
+        display: flex;
+        gap: 2rem;
+        // flex-direction: column;
+    
+        .website-design-box{
+            // border-bottom-color: #f44f4f;
+            width: 100%;
+            border: 0.1px solid $paragraphs;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            padding: 2rem 2rem;
+            &:hover{
+            border: 0.1px solid $buttons-color;
+            transition: .1s ease-out;
+            justify-content: space-between;
+            }
+            .website_design{
+                height: 25px;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 0; 
+                // border-bottom-color: #c90c0c; 
+            }
+            .what-i-built{
+                margin-top:8px;
+            }
+            .number-of-products {
+                font-size: 12px;
+                margin-top: 2rem;
+                color: $white;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        .semi-headngs{
+            font-size: 18px;
+            line-height: 28.8px;
+            color: $white;
+           
+        }
+    }
+}
+
+// my advantages
+.ranking-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+ .advantage-ranking-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .rankng-box{
+        width: 10rem;
+        height: 15rem;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        // padding:3rem 4rem;
+        border: 1px solid $paragraphs;
+        border-radius: 8rem;
+        margin-top: 2rem;
+        img{
+            width: 55px;
+            width: 50px;
+            align-items: center;
+            justify-content: center ;
+            margin-left: 3.2rem;
+            margin-top: 3.2rem;
+        }
+        
+    }
+    .percentage{
+        margin-top: 1rem;
+        color: $buttons-color;
+        font-size: 25px;
+        margin-left: 3.2rem;
+    }
+    .FIGMA{
+        text-align: center;
+        margin-top: 10px;
+        color: $paragraphs;
+    }
+    
+ }
+// skills end
+
+
+// featured projects
+.projects-section{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .semi-headngs-projects{
+        font-size: 24px;
+        line-height: 28.8px;
+        color: $white;              
+    }
+    .semi-headngs-projects a{
+        text-decoration: none;
+        color: $white
+    } &:hover{
+        text-decoration: underline;
+        color: $white;
+    }
+    .project-btns{
+    position: absolute;
+    bottom: 5rem;
+    left: 1.7rem;
+    display: flex;
+    gap: .7rem;
+    }   .project-btns button{
+        padding:.6rem 1.3rem;
+        border-radius: 2rem;
+        border: none;
+        &:hover{
+            background-color: black;
+            color: $white;
+            transition: all ease .2s;
+        }
+
+    }
+     
+}
+
+.projects-section-flex{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    // gap: 1.7rem;
+    img{
+        height: 380px;
+        width: 385px;
+       
+    }
+    .project-02-btns{
+        display: flex;
+        gap: .6rem;
+        position: absolute;
+        left: 2rem;
+        bottom: 1rem;
+    }
+    .project-02-btns button{
+        padding:.6rem 1.5rem;
+        border-radius :2rem;
+        border: none;
+        &:hover{
+            background-color: black;
+            color: $white;
+            transition: all ease .2s;
+        }
+    }
+    
+
+}.semi-headings-below-projects-02-03{
+        font-size: 24px;
+        line-height: 28.8px;
+        text-decoration: none;
+        display: flex;
+        gap: 8rem;
+   
+    
+    
+      
+}
+.semi-headings-below-projects-02-03 a{
+    color: $white; 
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+        transition: 1s ease-in-out;
+    }
+}
+
+.projects-portfolio-02-03{
+    display: flex;
+    justify-content: space-between;
+}
+// featured projects end
+// testmonials
+.testmonial-card{
+    padding: 2rem;
+    border: 1px solid $paragraphs;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 1rem;
+    .personal-details{
+        display: flex;
+        align-items: center;
+        gap: 1rem;  
+        .name{
+        align-items: center;
+        margin-top: 1.5rem;
+        font: 10px;
+        color: $white;
+        
+        }.testmonial-organization{
+            color: $buttons-color;
+            font-size: 12px;
+        }
+        .ocupation{
+            font-size: 12px;
+            color: $paragraphs;
+            line-height: $description-line-height;
+        }
+    }
+    .personal-comment{
+        font-size: 24px;
+        line-height: 28.8px;
+        color: $white;
+       
+    }
+    
+    .the-project{
+        color: $white;
+        font-size: 12px;
+    }
+    
+    .personal-details img{
+        height:50px;
+        width: 50px;
+        align-items: center;
+    }
+}
+
+// testmonials end
+// clints
+.clients-section{
+    padding: 2rem 0rem;
+    align-items: center;
+}   .clients-section-title{
+    color: $white;
+    font-size: 14px;
+    margin: 2rem 0;
+    margin-left: 0px;
+}.My-clients-first-line{
+    display: flex;
+    justify-content: space-between;
+}
+.My-clients-second-line{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}
+.My-clients-second-line img{
+    width: 90px;
+}
+.My-clients-first-line img{
+    width: 90px;
+}
+// clients end
+
+// pricing
+.pricing-cards{
+display: flex;
+justify-content: space-between;
+
+    .pricing-card-1{
+        padding: 2rem;
+        border: 1px solid $paragraphs;
+        width: 45%;
+        height: 40rem;
+        border-radius: 28px;
+        .top-card-text{
+            display: flex;
+            justify-content: space-between;
+            .BASIC{
+                color: $white;
+                font-size: 18px;
+            }
+            p{
+                color: $paragraphs;
+                text-align: right;
+            }
+        }
+    }
+    .hours-pricing{
+        display: flex; 
+         padding: 2rem 0;
+         gap: .4rem;
+         border-bottom: 1px solid $paragraphs;
+         .hours{
+            color: $buttons-color;
+            font-size: 35px;
+            align-items: center;
+            margin-right: .5rem;
+         }
+         p{
+            font-size: 20px;
+            color: $paragraphs;
+            align-items: center;
+            
+        }
+    } 
+}
+
+.pricing-description{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    // gap: 18px;
+   
+} .card-1-btn{
+    padding: .8rem 1.5rem;
+    margin: auto;
+    border-radius: 26px;
+    border: none;
+    background: #28e98c;
+    font-size: 16px;
+    align-items: center;
+    margin-top: 8rem;
+}
+.warning{
+    padding: 2rem 0;
+    justify-content: center;
+    .warning-message{
+        color: $white;
+        .contact-us-warning{
+            color: $buttons-color;
+            text-decoration: underline;
+        }
+    }
+}
+
+// pricing end
+// contact form
+
+form{
+    // background-c olor: #28e98c;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 40%;
+    // margin-bottom: 3rem;
+    .dd{
+        display: flex;
+        flex-direction: column;
+        p{
+            color: $white;
+        }
+        textarea{
+          background: none;
+        }
+        input{
+            // display: none;
+            border: none;
+         background: none;
+        }
+    }
+    .send-message-btn{
+        padding: .8rem 5rem;
+        background: none;
+        margin: auto;
+        border-radius: 26px;
+        border: none;
+        background: #28e98c;
+        font-size: 16px;
+        align-items: center;
+    }
+}
+.contact-us{
+    margin-bottom: 5rem;
+}
+// THANKS FOR WATCHING I AM HOT TECH UG SUBSCRIBE ON MY YOUTUBE CHANNEL  LOVE YOU ALL!
+
+
+@media (max-width:768px){
+    
+    
+    .my-specalizations{
+        border-bottom-color: #de1a1a;
+        .website-design-boxes{
+            display: flex;
+            gap: .8rem;
+            // flex-direction: column;
+        
+            .website-design-box{
+                border: 0.1px solid $paragraphs;
+                border-radius: 15px;
+                display: flex;
+                flex-direction: column;
+                padding: 1.7rem;
+                &:hover{
+                border: 0.1px solid $buttons-color;
+                transition: .1s ease-out;
+                }
+                .website_design{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 0;   
+                }
+                .what-i-built{
+                    margin-top:8px;
+                }
+                .number-of-products {
+                    font-size: 12px;
+                    margin-top: 2rem;
+                    color: $white;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .semi-headngs{
+                font-size: 18px;
+                line-height: 28.8px;
+                color: $white;
+            }
+        }
+    }
+}
